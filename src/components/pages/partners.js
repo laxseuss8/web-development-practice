@@ -1,5 +1,4 @@
 import React from "react";
-
 import dexma from "../../assets/images/principals/17.png";
 import skywalker from "../../assets/images/principals/18.png";
 import plcgroup from "../../assets/images/principals/19.png";
