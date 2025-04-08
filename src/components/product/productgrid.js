@@ -2,12 +2,18 @@ import React from "react";
 import ProductKeys from "./productkeys";
 import ProductCard from "./productcard";
 
+import VegaBg from "../../assets/images/bg/vega.jpg";
 const ProductGrid = () => {
   return (
-    <div className="p-10 bg-white ">
+    <div className="relative h-full w-full p-10 bg-gray-50">
+      <img
+        src={VegaBg}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover blur-md"
+      />
       <div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
-    xl:grid-cols-5 gap-3 px-15"
+    xl:grid-cols-5 gap-3 px-12 z-10 relative"
       >
         {ProductKeys.map((product) => (
           <ProductCard key={product.id} product={product} />
@@ -15,7 +21,7 @@ const ProductGrid = () => {
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex justify-center mt-6 space-x-3">
+      <div className="relative flex justify-center mt-6 space-x-3">
         {["Previous", "Next"].map((label, index) => (
           <a
             key={label}

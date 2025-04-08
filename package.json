@@ -5,6 +5,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@material-tailwind/react": "^2.1.10",
+    "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/postcss": "^4.0.13",
     "@tailwindcss/vite": "^4.0.13",
     "@testing-library/dom": "^10.4.0",
@@ -12,22 +14,26 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "framer-motion": "^12.5.0",
+    "clsx": "^2.1.1",
+    "flowbite-react": "^0.11.7",
+    "framer-motion": "^7.10.3",
     "lucide-react": "^0.479.0",
-    "motion": "^12.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "motion": "^12.6.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.3",
+    "tailwind-merge": "^3.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "flowbite-react patch"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +57,7 @@
   "main": "eslint.config.js",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "flowbite": "^3.1.2",
     "postcss": "^8.5.3",
     "postcss-import": "^16.1.0",
     "tailwindcss": "^3.4.17"

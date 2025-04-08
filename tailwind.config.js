@@ -1,9 +1,17 @@
+import flowbiteReact from "flowbite-react/plugin/tailwindcss";
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 
-import { transform } from "framer-motion";
-
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+export default withMT({
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    ".flowbite-react\\class-list.json",
+    "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       animation: {
@@ -12,7 +20,7 @@ export default {
       keyframes: {
         "loop-scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100)" },
+          to: { transform: "translateX(-100%)" }, // Fixed: Added '%' sign
         },
       },
       fontFamily: {
@@ -25,12 +33,12 @@ export default {
       },
     },
     screens: {
-      sm: "640px", // Small screens
-      md: "768px", // Medium screens
-      lg: "925px", // Large screens
-      xl: "1280px", // Extra large screens
+      sm: "640px",
+      md: "768px",
+      lg: "925px",
+      xl: "1280px",
       "2xl": "1536px",
     },
   },
-  plugins: [],
-};
+  plugins: [require("flowbite/plugin")], // Keep this as an array
+});

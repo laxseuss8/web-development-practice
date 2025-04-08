@@ -1,6 +1,6 @@
 import React from "react";
 import VideoBg from "../../assets/videos/video-intro.mp4";
-
+import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center px-4">
@@ -27,9 +27,11 @@ const Intro = () => {
                 services to suit their specific needs and preferences.
               </p>
               <div className="space-x-4 space-y-2">
-                <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-                  Learn about us!
-                </button>
+                <Link to="/about-us">
+                  <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                    Learn about us!
+                  </button>
+                </Link>
                 <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
                   I want to purchase.
                 </button>

@@ -36,7 +36,7 @@ const features = [
 
 export default function WhoWeAre() {
   return (
-    <div className="bg-slate-500 py-12 sm:py-26">
+    <div className="h-auto bg-slate-500 py-24 sm:py-26">
       <div className="mx-auto max-w-7xl px-3 lg:px-8">
         <div className="mx-auto max-w-7xl lg:text-center">
           <p

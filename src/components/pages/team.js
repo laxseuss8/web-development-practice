@@ -45,10 +45,10 @@ const teamMembers = [
 
 const MeetTheTeam = () => {
   return (
-    <section className="bg-secondary py-2">
+    <section className="bg-secondary py-12">
       <div className="mx-auto px-3 lg:px-8 max-w-7xl lg:text-center text-center">
         <h2
-          className="py-6 text-pretty text-4xl font-semibold tracking-tight
+          className="py-2 text-pretty text-4xl font-semibold tracking-tight
            text-white sm:text-6xl lg:text-balance"
         >
           Meet the TELKHA Team!
