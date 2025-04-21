@@ -131,33 +131,33 @@ const PartnerLogo = ({ name, src }) => (
   <img
     alt={name}
     src={src}
-    width={158}
-    height={48}
-    className="col-span-1 max-h-15 w-full object-contain 
+    width={30}
+    height={30}
+    className="col-span-2 max-h-9 w-full object-contain 
       lg:col-span-1 transition delay-150 duration-200 ease-in-out 
-      hover:-translate-y-1 hover:scale-125 max-w-none"
+      hover:-translate-y-1 hover:scale-105 max-w-none"
   />
 );
 
 const Partners = () => (
   <div className="mx-auto max-w-7xl px-6 lg:px-7">
-    <h2 className="py-1 mt-8 text-center text-3xl font-semibold tracking-tight text-black sm:text-4xl">
+    <h2 className="py-0 mt-8 text-center text-3xl font-semibold tracking-tight text-gray-800 sm:text-3xl">
       Trusted by the most forward-thinking teams worldwide
     </h2>
     <div
-      className="mx-auto mt-6 grid max-w-lg grid-cols-4 items-center px-6 gap-x-12 gap-y-10
-    sm:max-w-xl sm:grid-cols-6 sm:gap-x-3 lg:mx-0 lg:max-w-none lg:grid-cols-5 pb-16 py-6"
+      className="mx-auto mt-6 grid max-w-lg grid-cols-5 items-center px-6 gap-x-12 gap-y-10
+    sm:max-w-xl sm:grid-cols-4 sm:gap-x-3 lg:mx-0 lg:max-w-none lg:grid-cols-8 pb-16 py-6"
     >
       {partners.map((partner, index) => (
         <PartnerLogo key={index} {...partner} />
       ))}
     </div>
-    <h2 className="py-1 mt-8 text-center text-3xl font-semibold tracking-tight text-black sm:text-4xl">
+    <h2 className="py-0 mt-4 text-center text-3xl font-semibold tracking-tight text-gray-800 sm:text-3xl">
       Serving Clients with Innovation and Excellence
     </h2>
     <div
-      className="mx-auto mt-6 grid max-w-lg grid-cols-4 items-center px-6 gap-x-12 gap-y-10
-    sm:max-w-xl sm:grid-cols-6 sm:gap-x-3 lg:mx-0 lg:max-w-none lg:grid-cols-5 pb-16 py-6"
+      className="mx-auto mt-6 grid max-w-lg grid-cols-5 items-center px-6 gap-x-12 gap-y-10
+    sm:max-w-xl sm:grid-cols-4 sm:gap-x-3 lg:mx-0 lg:max-w-none lg:grid-cols-8 pb-16 py-6"
     >
       {clients.map((partner, index) => (
         <PartnerLogo key={index} {...partner} />

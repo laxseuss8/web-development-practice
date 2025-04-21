@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 import { SubMenuData } from "./Utilities";
 import MarketSubMenu from "./MarketSubMenu";
 import SolutionSubMenu from "./SolutionSubMenu";
-
+import AboutUs from "./About-Us";
 import Logo from "../../assets/images/telkhalogo-no-bg.png";
 import QAS from "../../assets/images/qas_logo.jpg";
 
@@ -39,6 +39,7 @@ export default function NavBar() {
           <ul className="gap-x-12 lg:flex-center hidden text-lg font-semibold text-white">
             <SolutionSubMenu />
             <MarketSubMenu />
+            <AboutUs />
           </ul>
 
           {/* QAS Logo (Right Side) */}

@@ -20,10 +20,10 @@ export default function SolutionSubMenu() {
     <Popover className="relative">
       <PopoverButton
         className="text-gray-800 inline-flex items-center gap-x-0 text-md/8 font-light 
-      hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl px-2 py-1 
-      transition-all duration-400"
+          hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl px-2 py-1 
+          transition-all duration-100"
       >
-        What We Offer?
+        What We Offer
         <ChevronDownIcon className="w-4 h-4" />
       </PopoverButton>
 

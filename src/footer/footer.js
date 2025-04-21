@@ -1,189 +1,169 @@
-import { Facebook, Mail, LinkedinIcon, Instagram } from "lucide-react";
 import React from "react";
-import Logo from "../assets/images/telkhalogo-no-bg.png";
+import { Facebook, Mail, LinkedinIcon, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/telkhalogo-no-bg.png";
 
 const Footer = () => {
   return (
-    <footer className="shadow-xl">
-      {/* Footer Content - 4 Columns */}
-      <div className="bg-white text-gray-800 py-2 border-t-2 border-gray-200">
-        <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-16 px-5">
-          {/* Column 1: Company Info */}
-          <div>
-            <img src={Logo} alt="Company Logo" className="my-0 h-12" />
-            <p className="my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800">
-              7F Highstreet South Corporate Plaza Tower 1, 26th street corner
-              9th Avenue, The Fort, Taguig, Philippines
-            </p>
-          </div>
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="container p-6 mx-auto">
+        <div className="lg:flex">
+          <div className="w-full -mx-6 lg:w-2/5">
+            <div className="px-6">
+              <Link to="/">
+                <img
+                  className="w-auto h-12 hover:"
+                  src={Logo}
+                  alt="Telkha Logo"
+                />
+              </Link>
+              <p className="max-w-sm mt-2 text-gray-600 dark:text-gray-400">
+                7F Highstreet South Corporate Plaza Tower 1, 26th street corner
+                9th Avenue, The Fort, Taguig, Philippines
+              </p>
 
-          {/* Column 2: Navigation Links */}
-          <div>
-            <h2 className="text-xl font-semibold mb-1">Pages</h2>
-            <ul className="space-y-0">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+              <div className="flex mt-6 -mx-2">
+                <a
+                  href="https://www.facebook.com/Telkhanetwork"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={32} />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/telkha-network-inc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinIcon size={32} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/telkhainc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={32} />
+                </a>
+
+                <a
+                  href="mailto:hrsupport@telkha.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label="MailMe"
+                >
+                  <Mail size={32} />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Column 1: Company Info */}
+          <div className="mt-6 lg:mt-0 lg:flex-1">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div>
+                <h3 className="text-gray-700 uppercase dark:text-white">
+                  Pages
+                </h3>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
-                >
-                  About Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Products */}
-          <div>
-            <h2 className="text-xl font-semibold mb-1">Products</h2>
-            <ul className="space-y-0">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+              </div>
+              {/* Column 2: Navigation Links */}
+              <div>
+                <h3 className="text-gray-700 uppercase dark:text-white">
+                  Products
+                </h3>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Product Documentation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Software downloads
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Services
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: About Us */}
-          <div>
-            <h2 className="text-xl font-semibold mb-1">About Us</h2>
-            <ul className="space-y-0">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+              </div>
+              {/* Column 3: Products */}
+              <div>
+                <h3 className="text-gray-700 uppercase dark:text-white">
+                  About Us
+                </h3>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Mission and Vision
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Company Culture
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
+                </a>
+                <a
+                  href="#"
+                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Meet the Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-primary my-1 sm:text-xs md:text-sm lg:text-md text-light text-gray-800"
-                >
-                  Careers
-                </Link>
-              </li>
-            </ul>
+                </a>
+              </div>
+
+              {/* Column 4: Contact Us */}
+              <div>
+                <h3 className="text-gray-700 uppercase dark:text-white">
+                  Contact Us
+                </h3>
+                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                  hrsupport@telkha.com
+                </span>
+                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                  hrbp@telkha.com
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Copyright Section */}
-      {/* Footer Bottom Section */}
-      <div className="bg-primary py-4 px-4">
-        <div className="mx-auto flex flex-row justify-between">
-          {/* Left Side: Copyright Section */}
-          <div className="text-left">
-            <p className="text-white font-bold text-sm">
-              &copy; 2025{" "}
-              <span className="text-white">Telkha Network Inc.</span> All rights
-              reserved.
-            </p>
-            <p className="text-white/70 font-semibold text-xs">
-              Technology | Solutions | Build
-            </p>
-          </div>
-
-          {/* Right Side: Social Media Icons */}
-          <div className="flex items-center gap-3">
-            <a
-              href="https://www.facebook.com/Telkhanetwork"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white rounded-md p-1 transition-all 
-              duration-1000 hover:bg-gray-500"
-            >
-              <Facebook size={32} />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/telkha-network-inc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white rounded-md p-1 transition-all 
-              duration-1000 hover:bg-gray-500"
-            >
-              <LinkedinIcon size={32} />
-            </a>
-            <a
-              href="https://www.instagram.com/telkhainc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white rounded-md p-1 transition-all 
-              duration-1000 hover:bg-gray-500"
-            >
-              <Instagram size={32} />
-            </a>
-            <a
-              href="mailto:hrsupport@telkha.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white rounded-md p-1 transition-all 
-              duration-1000 hover:bg-gray-500"
-            >
-              <Mail size={32} />
-            </a>
-          </div>
+        <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+        <div>
+          <p className="text-center text-gray-600 dark:text-gray-400">
+            © Telkha Network Inc. - All rights reserved
+          </p>
+          <p className="text-center text-gray-600 dark:text-gray-400 text-xs">
+            Technology | Solutions | Build
+          </p>
         </div>
       </div>
     </footer>
