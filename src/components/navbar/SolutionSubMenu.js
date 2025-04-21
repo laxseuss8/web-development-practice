@@ -27,10 +27,15 @@ export default function SolutionSubMenu() {
         <ChevronDownIcon className="w-4 h-4" />
       </PopoverButton>
 
-      <PopoverPanel className="absolute z-10 mt-6 rounded-xl bg-white/90 shadow-lg">
+      <PopoverPanel
+        transition
+        className="absolute z-10 mt-6 rounded-xl bg-white/90 shadow-lg transition data-[closed]:translate-y-1 data-[closed]:opacity-0 
+        data-[enter]:duration-400 data-[leave]:duration-150 data-[enter]:ease-out 
+        data-[leave]:ease-in"
+      >
         <div className="flex">
           {/* Left column with images */}
-          <div className="w-[260px] flex flex-col">
+          <div className="w-[230px] flex flex-col">
             {solutions?.subCategories.map(({ subMenuHeading }) => (
               <div
                 key={subMenuHeading}
@@ -40,13 +45,14 @@ export default function SolutionSubMenu() {
                 <img
                   src={images[subMenuHeading]}
                   alt={subMenuHeading}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-fill rounded-xl"
                 />
 
                 {/* Right panel shows submenu on hover */}
                 <div
                   className="absolute left-full top-0 z-20 hidden w-[300px] rounded-xl  bg-white/90 
-                shadow-lg group-hover:block gap-5"
+                shadow-lg group-hover:block gap-5 max-h-[calc(100vh-4rem)]
+                 overflow-y-auto"
                 >
                   <div className="p-1">
                     {solutions?.subCategories

@@ -106,8 +106,8 @@ export default function MarketSubMenu() {
       >
         <div>
           <div
-            className="mx-auto flex-auto overflow-visible  text-white p-6 rounded-2xl bg-white
-           shadow-lg grid grid-cols-5 gap-1 ring-1 ring-gray-900/5"
+            className="mx-auto flex-auto overflow-visible  text-white p-2 rounded-2xl bg-white
+           shadow-lg grid grid-cols-5 gap-1 ring-1 ring-gray-900/5 "
           >
             {images.map((image, index) => (
               <div
@@ -122,7 +122,7 @@ export default function MarketSubMenu() {
                 />
                 <div
                   className="absolute bottom-0 left-0 bg-black bg-opacity-55 text-white 
-              text-sm p-0 w-full"
+              text-sm p-1 w-full"
                 >
                   {image.alt}
                 </div>
