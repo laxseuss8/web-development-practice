@@ -102,7 +102,7 @@ export const SubMenuData = [
           {
             name: "Energy Audit+Optimize",
             description: "Energy Optimization",
-            href: "#",
+            href: "/energyaudit-optimize",
             icon: CogIcon,
           },
           {

@@ -6,6 +6,7 @@ import Facility360 from "./solutions/facility360";
 import DigitalTwin from "./solutions/digitwin";
 import AboutUs from "./components/main/AboutUs";
 import SolutionSubMenuTest from "./components/navbar/SolutionSubMenu";
+import EnergyAuditOptimize from "./solutions/EnergyAuditOptimize";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           element={<DigitalTwin />}
         />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/energyaudit-optimize" element={<EnergyAuditOptimize />} />
       </Routes>
     </div>
   );
