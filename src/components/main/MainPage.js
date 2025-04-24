@@ -7,13 +7,14 @@ import ProductGrid from "../product/productgrid";
 import Footer from "../../footer/footer";
 import WhoWeAre from "../pages/whoweare";
 import Partners from "../pages/partners";
+import SolutionsList from "../pages/SolutionsList";
 
 const MainPage = () => {
   return (
     <div>
       <NavBar />
       <Intro />
-      <ProductGrid />
+      <SolutionsList />
       <WhoWeAre />
       <Partners />
       <Footer />

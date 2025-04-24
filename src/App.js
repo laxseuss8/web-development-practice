@@ -2,10 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import MainPage from "./components/main/MainPage";
-import Facility360 from "./solutions/facility360";
-import DigitalTwin from "./solutions/digitwin";
+import Facility360 from "./solutions/Facility-360";
+import DigitalTwin from "./solutions/DigitalTwin";
 import AboutUs from "./components/main/AboutUs";
-import SolutionSubMenuTest from "./components/navbar/SolutionSubMenu";
 import EnergyAuditOptimize from "./solutions/EnergyAuditOptimize";
 
 function App() {
@@ -22,7 +21,10 @@ function App() {
           element={<DigitalTwin />}
         />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/energyaudit-optimize" element={<EnergyAuditOptimize />} />
+        <Route
+          path="/energy&facilities/energyaudit-optimize"
+          element={<EnergyAuditOptimize />}
+        />
       </Routes>
     </div>
   );
